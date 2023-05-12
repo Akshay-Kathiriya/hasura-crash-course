@@ -1,0 +1,12 @@
+table:
+  schema: public
+  name: blog_post_activity
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - id
+        - blog_post_id
+        - type
+        - date
+      filter: {}
